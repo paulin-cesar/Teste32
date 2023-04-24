@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutinhas</title>
+</head>
+<body>
+    
+</body>
+</html>
+<p>Escreva Banana, Laranja ou Maçã aqui e clique no botão.</p>
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Testa ai querido(a)</button>
+
+<p id="joa"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var fruits = document.getElementById("myInput").value;
+
+  switch(fruits) {
+    case "Banana":
+      text = "Banana é very boa!";
+    break;
+    case "Laranja":
+    text = "boa escolha parceiro.";
+    break;
+    case "Maçã":
+    text = "Eu também adoro maçãs";
+    break;
+    case "Maçã Verde":
+    text = "Que isso meu parceiro, isso nem tava na lista, mas é tão boa que vc até colocou em cria";
+    break;
+    default:
+    text = "Nunca ouvi falar dessa fruta companheiro";
+  }
+  document.getElementById("joa").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
